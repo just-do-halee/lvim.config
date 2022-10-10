@@ -224,8 +224,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 nnoremap("<leader>]", "Vi")
 nnoremap("<leader>[", "Va")
 
-nnoremap("<leader>'", "o<Esc>0")
-nnoremap("<leader>\"", "O<Esc>0")
+nnoremap("<leader>o", "o<Esc>0")
+nnoremap("<leader>O", "O<Esc>0")
 
 nnoremap("<leader>pv", ":Ex<CR>")
 nnoremap("<leader>u", ":UndotreeToggle<CR>")
