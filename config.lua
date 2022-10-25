@@ -228,6 +228,7 @@ nnoremap("<leader>o", "o<Esc>0")
 nnoremap("<leader>O", "O<Esc>0")
 
 nnoremap("<leader>pv", ":Ex<CR>")
+nnoremap("<leader>h", ":noh<CR>")
 nnoremap("<leader>u", ":UndotreeToggle<CR>")
 
 vnoremap("J", ":m '>+1<CR>gv=gv")
