@@ -32,6 +32,9 @@ vim.opt.cmdheight = 1
 vim.opt.guicursor = ""
 vim.opt.clipboard = ""
 
+-- Formattings
+lvim.format_on_save = true
+
 -- Change theme settings
 lvim.builtin.theme.options.style = "storm"
 
