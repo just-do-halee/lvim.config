@@ -240,6 +240,7 @@ nnoremap("<leader>u", ":UndotreeToggle<CR>")
 
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
+vnoremap("<leader>s", ":s/\\(\\w.*\\)/")
 
 nnoremap("Y", "yg$")
 nnoremap("n", "nzzzv")
