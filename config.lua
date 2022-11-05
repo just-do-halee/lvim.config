@@ -72,6 +72,9 @@ lvim.builtin.treesitter.ensure_installed = {
     "go",
 }
 
+-- Activate Emmet to *.tmpl files
+-- lvim.builtin.Emmet.filetypes = { "html", "tmpl" }
+
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
@@ -277,3 +280,4 @@ nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 nnoremap("<leader>ge", "0f=F i, err<Esc>oif err != nil {<Enter>}<Esc>ko")
+nnoremap("<leader>gE", "0wierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
