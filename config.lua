@@ -189,6 +189,9 @@ lvim.plugins = {
     {
         "fatih/vim-go",
     },
+    {
+        "rest-nvim/rest.nvim",
+    }
 }
 
 local augroup = vim.api.nvim_create_augroup
@@ -281,3 +284,6 @@ nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 nnoremap("<leader>ge", "0f=F i, err<Esc>oif err != nil {<Enter>}<Esc>ko")
 nnoremap("<leader>gE", "0wierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
+
+-- plugin mappings
+nnoremap("<leader>R", "<Plug>RestNvim")
