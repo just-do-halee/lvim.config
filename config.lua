@@ -287,3 +287,5 @@ nnoremap("<leader>gE", "0wierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
 
 -- plugin mappings
 nnoremap("<leader>R", "<Plug>RestNvim")
+nnoremap("<leader>gr", ":GoRun % ")
+nnoremap("<leader>rr", ":!cargo run -- ")
