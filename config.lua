@@ -289,3 +289,12 @@ nnoremap("<leader>gE", "0wierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
 nnoremap("<leader>R", "<Plug>RestNvim")
 nnoremap("<leader>gr", ":GoRun % ")
 nnoremap("<leader>rr", ":!cargo run -- ")
+
+vim.api.nvim_create_user_command("OpenSayHello", function(input)
+    vim.api.nvim_command(":!open 'https://beta.sayhello.so/search?q=" .. input.args .. "'")
+end,
+    { nargs = 1 }
+)
+
+-- open url in browser
+nnoremap("<leader>S", ":OpenSayHello ")
