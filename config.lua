@@ -240,7 +240,7 @@ nnoremap("<leader>[", "{w$")
 nnoremap("<leader>o", "o<Esc>0")
 nnoremap("<leader>O", "O<Esc>0")
 
-nnoremap("<leader>pv", ":Ex<CR>")
+-- nnoremap("<leader>pv", ":Ex<CR>")
 nnoremap("<leader>h", ":noh<CR>")
 nnoremap("<leader>u", ":UndotreeToggle<CR>")
 
@@ -262,6 +262,10 @@ xnoremap("<leader>p", "\"_dP")
 nnoremap("<leader>y", "\"+y")
 vnoremap("<leader>y", "\"+y")
 nmap("<leader>Y", "\"+Y")
+
+nnoremap("<leader>p", "\"+p")
+vnoremap("<leader>p", "\"+p")
+nmap("<leader>P", "\"+P")
 
 nnoremap("<leader>d", "\"_d")
 vnoremap("<leader>d", "\"_d")
