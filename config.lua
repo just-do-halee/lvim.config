@@ -291,7 +291,11 @@ nnoremap("<leader>gE", "_ierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
 
 -- plugin mappings
 nnoremap("<leader>R", "<Plug>RestNvim")
+
 nnoremap("<leader>gr", ":GoRun % ")
+nnoremap("<leader>gt", ":GoTest")
+nnoremap("<leader>gc", ":GoCoverageToggle")
+
 nnoremap("<leader>rr", ":!cargo run -- ")
 
 vim.api.nvim_create_user_command("OpenSayHello", function(input)
