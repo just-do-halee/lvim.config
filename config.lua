@@ -15,6 +15,8 @@ lvim.colorscheme = "gruvbox-material"
 lvim.transparent_window = true
 lvim.format_on_save = true
 
+vim.o.background = "dark"
+
 vim.opt.updatetime = 50
 vim.opt.rnu = true
 
@@ -128,8 +130,9 @@ lvim.plugins = {
                     on_attach = function(client, bufnr)
                         require("lvim.lsp").common_on_attach(client, bufnr)
                         local rt = require "rust-tools"
-                        -- Hover actions
-                        vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+                        -- Hover actions with Toggle "<C-b>"
+                        vim.keymap.set("n", "<C-b>", rt.hover_actions.hover_actions, { buffer = bufnr })
+
                         -- Code action groups
                         vim.keymap.set("n", "<leader>lg", rt.code_action_group.code_action_group, { buffer = bufnr })
                     end,
