@@ -292,6 +292,12 @@ nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 nnoremap("<leader>ge", "_f=F i, err<Esc>oif err != nil {<Enter>}<Esc>ko")
 nnoremap("<leader>gE", "_ierr := <Esc>oif err != nil {<Enter>}<Esc>ko")
 
+nnoremap("<leader>ro", "_iOk(<Esc>$a)<Esc>")
+nnoremap("<leader>re", "_iErr(<Esc>$a)<Esc>")
+nnoremap("<leader>rs", "_iSome(<Esc>$a)<Esc>")
+nnoremap("<leader>rn", "iNone<Esc>")
+nnoremap("<leader>rw", "$F>WciW")
+
 -- plugin mappings
 nnoremap("<leader>R", "<Plug>RestNvim")
 
