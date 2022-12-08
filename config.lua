@@ -193,6 +193,9 @@ lvim.plugins = {
         "fatih/vim-go",
     },
     {
+        "evanleck/vim-svelte",
+    },
+    {
         "rest-nvim/rest.nvim",
     }
 }
