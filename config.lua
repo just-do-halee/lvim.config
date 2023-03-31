@@ -311,6 +311,12 @@ nnoremap("<leader>gt", ":GoTest")
 nnoremap("<leader>gc", ":GoCoverageToggle")
 
 nnoremap("<leader>rr", ":!cargo run -- ")
+nnoremap("<leader>ra", ":!cargo add ")
+nnoremap("<leader>rm", ":!cargo remove ")
+
+nnoremap("<leader>pr", ":!python % -- ")
+nnoremap("<leader>pi", ":!pip install ")
+nnoremap("<leader>pu", ":!pip uninstall ")
 
 vim.api.nvim_create_user_command("OpenSayHello", function(input)
     vim.api.nvim_command(":!open 'https://beta.sayhello.so/search?q=" .. input.args .. "'")
